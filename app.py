@@ -179,45 +179,45 @@ st.markdown('## Images')
 
 st.markdown('## Image similarity')
 image_comparison(
-    img1="https://github.com/shivacharan22/VLN-Using-Hierarchical-Chunk-Memory-Attention-and-RLHF/blob/main/temp/9de3b014-bd50-4c89-95dc-97c02fb3a239.jpg",
-    img2="https://github.com/shivacharan22/VLN-Using-Hierarchical-Chunk-Memory-Attention-and-RLHF/blob/main/temp/4.png"
+    img1="tempd/3.jpg",
+    img2="tempd/4.png"
 )
 st.metric(label="Cosine similarity", value="0.41")
 
 st.markdown('## Image Dis - similarity')
 image_comparison(
-    img1="https://github.com/shivacharan22/VLN-Using-Hierarchical-Chunk-Memory-Attention-and-RLHF/blob/main/temp/9de3b014-bd50-4c89-95dc-97c02fb3a239.jpg",
-    img2="https://github.com/shivacharan22/VLN-Using-Hierarchical-Chunk-Memory-Attention-and-RLHF/blob/main/temp/ab546597-cb06-4bd0-a312-a6e582fd7c69.jpg"
+    img1="tempd/3.jpg",
+    img2="tempd/dis.jpg"
 )
 st.metric(label="Cosine similarity", value="0.23")
 
 
 st.markdown("### Part2 : Whole network training with contrastive supervised learning")
 
-df = pd.read_csv("https://github.com/shivacharan22/VLN-Using-Hierarchical-Chunk-Memory-Attention-and-RLHF/blob/main/Part-2/conTra_data.csv")
+df = pd.read_csv("Part-2/conTra_data.csv")
 st.markdown("## Dataset created")
 st.dataframe(df.style.highlight_max(axis=0))
 
 st.markdown('## Predicted by model 1 on train dataset sample')
-video_file = open('https://github.com/shivacharan22/VLN-Using-Hierarchical-Chunk-Memory-Attention-and-RLHF/blob/main/videos/train_v1.mp4', 'rb')
+video_file = open('videos/train_v1.mp4', 'rb')
 video_bytes = video_file.read()
 
 st.video(video_bytes)
 
 st.markdown('## Predicted by model 2 on train dataset sample')
-video_file = open('https://github.com/shivacharan22/VLN-Using-Hierarchical-Chunk-Memory-Attention-and-RLHF/blob/main/videos/train_v2.mp4', 'rb')
+video_file = open('videos/train_v2.mp4', 'rb')
 video_bytes = video_file.read()
 
 st.video(video_bytes)
 
 st.markdown('## Predicted by model 1 on unseen sample')
-video_file = open('https://github.com/shivacharan22/VLN-Using-Hierarchical-Chunk-Memory-Attention-and-RLHF/blob/main/videos/val_v1.mp4', 'rb')
+video_file = open('videos/val_v1.mp4', 'rb')
 video_bytes = video_file.read()
 
 st.video(video_bytes)
 
 st.markdown('## Predicted by model 2 on unseen sample')
-video_file = open('https://github.com/shivacharan22/VLN-Using-Hierarchical-Chunk-Memory-Attention-and-RLHF/blob/main/videos/val_v2.mp4', 'rb')
+video_file = open('videos/val_v2.mp4', 'rb')
 video_bytes = video_file.read()
 
 st.video(video_bytes)
