@@ -6,4 +6,4 @@ Run this to see the results UI (download streamlit first!!!)
 -
 > streamlit run app.py
 
-Check [this](https://shivacharan22.github.io/research_projects/2023-01-10-VLN-with-HCAM-RLHF/) for commands to setup the env to run
+Check [this](https://shivacharan22.github.io/research_projects/2023-01-10-VLN-with-HCAM-RLHF/) for more details.
